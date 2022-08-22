@@ -1,0 +1,35 @@
+Majors = {
+	OR = {
+		tag = GER
+		tag = ITA
+		tag = SOV
+		tag = USA
+		tag = ENG
+		tag = JAP
+		tag = CHI
+		tag = FRA
+	}
+}
+Minors = {
+	OR = {
+		tag = HUN
+		tag = ROM
+		tag = YUG
+		tag = BUL
+		tag = HOL
+		tag = GRE
+		tag = CZE
+		tag = SPR
+		tag = POR
+		tag = SWE
+		tag = TUR
+		tag = ARG
+		tag = AST
+		tag = BRA
+		tag = CAN
+		tag = MEX
+		tag = INS
+		tag = SAF
+		tag = MAN
+	}
+}

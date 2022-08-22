@@ -1,0 +1,123 @@
+
+
+
+LAH_decisions = {
+    "More Factories" = {
+        icon = generic_operation
+        fire_only_once = no
+        available = {
+            always = yes
+        }
+        visible = {
+            always = yes
+        }
+        cost = 200
+        days_re_enable = 90
+        complete_effect = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+    }
+	"Mobilize the youth" = {
+		icon = generic_operation
+		fire_only_once = no
+        available = {
+            always = yes
+        }
+        visible = {
+            always = yes
+        }
+        cost = 150
+        days_re_enable = 90
+
+	
+		complete_effect = {
+			add_ideas = mobilize_the_youth_idea
+			add_manpower = 40000
+		}
+	}
+	"Volkssturm" = {
+		icon = generic_operation
+		fire_only_once = yes
+        available = {
+            surrender_progress > 0.5
+        }
+        visible = {
+            always = yes
+        }
+        cost = 75
+
+		complete_effect = {
+			division_template = {
+				name = "Volkssturm Brigade"
+				template_counter = 4
+				division_names_group = SPR_INF_06
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+					infantry = { x = 2 y = 3 }
+				}
+				support = {
+					engineer = { x = 0 y = 1 }
+				}
+			}
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "division_template = \"Volkssturm Brigade\" start_experience_factor = 0.3" 
+					owner = ROOT
+					allow_spawning_on_enemy_provs = no
+					count = 10
+				}
+			}
+		}
+	}
+	"Search for Resources" = {
+		icon = generic_operation
+		fire_only_once = yes
+        available = {
+            always = yes
+        }
+        visible = {
+            always = yes
+        }
+        cost = 75
+
+		complete_effect = {
+		}
+	}
+}

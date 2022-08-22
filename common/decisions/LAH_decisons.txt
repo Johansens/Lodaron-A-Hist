@@ -93,7 +93,7 @@ LAH_decisions = {
 					infantry = { x = 2 y = 3 }
 				}
 				support = {
-					engineer = { x = 0 y = 1 }
+					engineer = { x = 0 y = 0 }
 				}
 			}
 			random_owned_controlled_state = {
@@ -108,16 +108,51 @@ LAH_decisions = {
 	}
 	"Search for Resources" = {
 		icon = generic_operation
-		fire_only_once = yes
+		fire_only_once = no
         available = {
             always = yes
         }
         visible = {
             always = yes
         }
-        cost = 75
+        cost = 200
+ 		days_re_enable = 180
 
 		complete_effect = {
+			random_list = {
+				25 = {
+					random_owned_controlled_state = {
+						add_resource = {
+							type = steel
+							amount = 8
+						}
+					}
+				}
+				25 = {
+					random_owned_controlled_state = {
+						add_resource = {
+							type = aluminium
+							amount = 8
+						}
+					}
+				}
+				25 = {
+					random_owned_controlled_state = {
+						add_resource = {
+							type = chromium
+							amount = 8
+						}
+					}
+				}
+				25 = {
+					random_owned_controlled_state = {
+						add_resource = {
+							type = tungsten
+							amount = 8
+						}
+					}
+				}
+			}
 		}
 	}
 }

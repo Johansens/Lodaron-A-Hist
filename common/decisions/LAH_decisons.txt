@@ -155,4 +155,58 @@ LAH_decisions = {
 			}
 		}
 	}
+	"Peace with Japan" = {
+		icon = generic_operation
+        fire_only_once = no
+        available = {
+            custom_trigger_tooltip = {
+				tooltip = JAP_sue_for_peace_TT
+				NOT = {
+					controls_state = 525
+					controls_state = 527
+				}
+				NOT = {
+					any_of = {
+						array = CHI.core_states
+						var:v = {
+							NOT = {
+								state = 524
+							}
+							controller = {
+								OR = {
+									tag = JAP
+									AND = {
+										is_subject_of = JAP
+										OR = {
+											tag = MEN
+											tag = MAN
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				MAN = {
+					OR = {
+						exists = no
+						NOT = {
+							is_subject_of = JAP
+						}
+						has_capitulated = yes
+					}
+				}
+			}
+        }
+		allowed = {
+			tag = CHI
+		}
+        visible = {
+            always = yes
+        }
+		cost = 0
+		complete_effect = {
+			country_event = { id = wtt_japan.126 days = 1 }
+		}
+	}
 }

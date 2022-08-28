@@ -3,23 +3,115 @@
 
 is_7p_nation = {
 	OR = {
-		original_tag = GER
-		original_tag = SOV
-		original_tag = USA
+		AND = {
+			original_tag = USA
+			USA = {
+				has_government = democratic
+			}		
+		}
+		AND = {
+			original_tag = SOV
+			SOV = {
+				has_government = communism
+			}		
+		}
 	}
 }
-
+is_6p_nation = {
+	AND = {
+		original_tag = GER
+		GER = {
+			has_government = fascism
+		}
+	}	
+}
 is_5p_nation = {
 	OR = {
-		original_tag = ENG
-		original_tag = FRA
-		original_tag = JAP
-		original_tag = ITA
-		original_tag = CHI
-		original_tag = PRC
+		AND = {
+			original_tag = ENG
+			ENG = {
+				has_government = democratic
+			}
+		}	
+		AND = {
+			original_tag = FRA
+			FRA = {
+				has_government = democratic
+			}
+		}	
+		AND = {
+			original_tag = JAP
+			JAP = {
+				has_government = fascism
+			}
+		}
+		AND = {
+			original_tag = GER
+			GER = {
+				NOT = {
+					has_government = fascism
+				}	
+			}
+		}
+		AND = {
+			original_tag = SOV
+			SOV = {
+				NOT = {
+					has_government = communism
+				}	
+			}
+		}
 	}
 }
-
+is_4p_nation = {
+	OR = {
+		original_tag = CHI
+		AND = {
+			original_tag = ITA
+			ITA = {
+				has_government = fascism
+			}
+		}
+		AND = {
+			original_tag = HUN
+			HUN = {
+				has_completed_focus = HUN_proclaim_the_restoration_of_austria_hungary
+			}
+		}
+		AND = {
+			original_tag = FRA
+			FRA = {
+				NOT = {
+					has_government = democratic
+				}	
+			}
+		}	
+		AND = {
+			original_tag = ENG
+			ENG = {
+				NOT = {
+					has_government = democratic
+				}	
+			}
+		}
+		AND = {
+			original_tag = USA
+			USA = {
+				NOT = {
+					has_government = democratic
+				}	
+			}
+		}
+		AND = {
+			original_tag = JAP
+			JAP = {
+				NOT = {
+					has_government = fascism
+				}	
+			}
+		}			
+	}
+}
 is_3p_nation = {
 	OR = {
 		original_tag = BEL
@@ -43,6 +135,7 @@ is_3p_nation = {
 		original_tag = SAF
 		original_tag = MAN
 		original_tag = RAJ
+		original_tag = PLC
 	}
 }
 

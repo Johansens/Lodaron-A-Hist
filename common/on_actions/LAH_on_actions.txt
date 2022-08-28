@@ -1,0 +1,823 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			set_variable = { var = allies_p value = 0 }
+			set_variable = { var = Axis_p value = 0 }
+			set_variable = { var = Comintern_p value = 0 }
+			set_variable = { var = faction_01 value = 0 }
+			set_variable = { var = faction_02 value = 0 }
+			set_variable = { var = faction_03 value = 0 }
+			set_variable = { var = faction_04 value = 0 }
+			set_variable = { var = faction_05 value = 0 }
+			set_variable = { var = faction_06 value = 0 }
+			set_variable = { var = faction_07 value = 0 }
+			set_variable = { var = faction_08 value = 0 }
+			set_variable = { var = faction_09 value = 0 }
+			set_variable = { var = faction_10 value = 0 }
+			ENG = {
+				add_ideas  = { faction_points_allies }
+				add_to_variable = { allies_p = 5 }
+				if = {
+					limit = { CAN = { is_ai = no } }
+					add_to_variable = { allies_p = 3 }
+				}
+				if = {
+					limit = { SAF = { is_ai = no } }
+					add_to_variable = { allies_p = 3 }
+				}
+				if = {
+					limit = { AUS = { is_ai = no } }
+					add_to_variable = { allies_p = 3 }
+				}
+				if = {
+					limit = { RAJ = { is_ai = no } }
+					add_to_variable = { allies_p = 3 }
+				}
+				if = {
+					limit = { NZL = { is_ai = no } }
+					add_to_variable = { allies_p = 1 }
+				}
+			}
+			GER = {
+				add_ideas  = { faction_points_axis }
+				add_to_variable = { Axis_p = 6 }
+			}
+			SOV = {
+				add_ideas  = { faction_points_commintern }
+				add_to_variable = { Comintern_p = 7 }
+				if = {
+					limit = { TAN = { is_ai = no } }
+					add_to_variable = { Comintern_p = 1 }
+				}
+				if = {
+					limit = { MON = { is_ai = no } }
+					add_to_variable = { Comintern_p = 1 }
+				}
+			}
+		}
+	}
+	on_create_faction = {
+		effect = {
+			if = {
+				limit = {
+					check_variable = { faction_01 = 0 compare = equals }
+					ROOT = {
+						NOT = {
+							OR = {
+								has_idea = faction_points_faction_02
+								has_idea = faction_points_faction_03
+								has_idea = faction_points_faction_04
+								has_idea = faction_points_faction_05
+								has_idea = faction_points_faction_06
+								has_idea = faction_points_faction_07
+								has_idea = faction_points_faction_08
+								has_idea = faction_points_faction_09
+								has_idea = faction_points_faction_10
+
+							} 
+						}
+					}
+				}
+				ROOT = { add_ideas = faction_points_faction_01 }
+				if = { 
+					limit = {
+						ROOT = {
+							is_7p_nation = yes
+						}
+					}
+					add_to_variable = { faction_01 = 7 }
+				}
+				else_if = { 
+					limit = {
+						ROOT = {
+							is_6p_nation = yes
+						}
+					}
+					add_to_variable = { faction_01 = 6 }
+				}
+				else_if = { 
+					limit = {
+						ROOT = {
+							is_5p_nation = yes
+						}
+					}
+					add_to_variable = { faction_01 = 5 }
+				}
+				else_if = { 
+					limit = {
+						ROOT = {
+							is_4p_nation = yes
+						}
+					}
+					add_to_variable = { faction_01 = 4 }
+				}
+				else_if = { 
+					limit = {
+						ROOT = {
+							is_3p_nation = yes
+						}
+					}
+					add_to_variable = { faction_01 = 3 }
+				}
+				else_if = { 
+					limit = {
+						ROOT = {
+							is_1p_nation = yes
+						}
+					}
+					add_to_variable = { faction_01 = 1 }
+				}
+				if = {
+					limit = {
+						FROM = {
+							is_7p_nation = yes
+						}
+					}
+					add_to_variable = { faction_01 = 7 }
+				}
+				if = {
+					limit = {
+						FROM = {
+							is_6p_nation = yes
+						}
+					}
+					add_to_variable = { faction_01 = 6 }
+				}
+				if = {
+					limit = {
+						FROM = {
+							is_5p_nation = yes
+						}
+					}
+					add_to_variable = { faction_01 = 5 }
+				}
+				if = {
+					limit = {
+						FROM = {
+							is_4p_nation = yes
+						}
+					}
+					add_to_variable = { faction_01 = 4 }
+				}
+				if = {
+					limit = {
+						FROM = {
+							is_3p_nation = yes
+						}
+					}
+					add_to_variable = { faction_01 = 3 }
+				}
+				if = {
+					limit = {
+						FROM = {
+							is_1p_nation = yes
+						}
+					}
+					add_to_variable = { faction_01 =  }
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { faction_01 = 1 compare = greater_than_or_equals }
+					ROOT = {
+						NOT = {
+							OR = {
+								has_idea = faction_points_faction_01
+								has_idea = faction_points_faction_03
+								has_idea = faction_points_faction_04
+								has_idea = faction_points_faction_05
+								has_idea = faction_points_faction_06
+								has_idea = faction_points_faction_07
+								has_idea = faction_points_faction_08
+								has_idea = faction_points_faction_09
+								has_idea = faction_points_faction_10
+
+							} 
+						}
+					}
+				}
+				ROOT = { add_ideas = faction_points_faction_02 }
+				if = { 
+					limit = {
+						ROOT = {
+							is_7p_nation = yes
+						}
+					}
+					add_to_variable = { faction_02 = 7 }
+				}
+				else_if = { 
+					limit = {
+						ROOT = {
+							is_6p_nation = yes
+						}
+					}
+					add_to_variable = { faction_02 = 6 }
+				}
+				else_if = { 
+					limit = {
+						ROOT = {
+							is_5p_nation = yes
+						}
+					}
+					add_to_variable = { faction_02 = 5 }
+				}
+				else_if = { 
+					limit = {
+						ROOT = {
+							is_4p_nation = yes
+						}
+					}
+					add_to_variable = { faction_02 = 4 }
+				}
+				else_if = { 
+					limit = {
+						ROOT = {
+							is_3p_nation = yes
+						}
+					}
+					add_to_variable = { faction_02 = 3 }
+				}
+				else_if = { 
+					limit = {
+						ROOT = {
+							is_1p_nation = yes
+						}
+					}
+					add_to_variable = { faction_02 = 1 }
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { faction_02 = 1 compare = greater_than_or_equals }
+					ROOT = {
+						NOT = {
+							OR = {
+								has_idea = faction_points_faction_01
+								has_idea = faction_points_faction_02
+								has_idea = faction_points_faction_04
+								has_idea = faction_points_faction_05
+								has_idea = faction_points_faction_06
+								has_idea = faction_points_faction_07
+								has_idea = faction_points_faction_08
+								has_idea = faction_points_faction_09
+								has_idea = faction_points_faction_10
+							} 
+						}
+					}
+				}
+				ROOT = { add_ideas = faction_points_faction_03 }
+				if = { 
+					limit = {
+						ROOT = {
+							is_7p_nation = yes
+						}
+					}
+					add_to_variable = { faction_03 = 7 }
+				}
+				else_if = { 
+					limit = {
+						ROOT = {
+							is_6p_nation = yes
+						}
+					}
+					add_to_variable = { faction_03 = 6 }
+				}
+				else_if = { 
+					limit = {
+						ROOT = {
+							is_5p_nation = yes
+						}
+					}
+					add_to_variable = { faction_03 = 5 }
+				}
+				else_if = { 
+					limit = {
+						ROOT = {
+							is_4p_nation = yes
+						}
+					}
+					add_to_variable = { faction_03 = 4 }
+				}
+				else_if = { 
+					limit = {
+						ROOT = {
+							is_3p_nation = yes
+						}
+					}
+					add_to_variable = { faction_03 = 3 }
+				}
+				else_if = { 
+					limit = {
+						ROOT = {
+							is_1p_nation = yes
+						}
+					}
+					add_to_variable = { faction_03 = 1 }
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { faction_03 = 1 compare = greater_than_or_equals }
+					ROOT = {
+						NOT = {
+							OR = {
+								has_idea = faction_points_faction_01
+								has_idea = faction_points_faction_02
+								has_idea = faction_points_faction_03
+								has_idea = faction_points_faction_05
+								has_idea = faction_points_faction_06
+								has_idea = faction_points_faction_07
+								has_idea = faction_points_faction_08
+								has_idea = faction_points_faction_09
+								has_idea = faction_points_faction_10
+							} 
+						}
+					}
+				}
+				ROOT = { add_ideas = faction_points_faction_04 }
+				if = { 
+					limit = {
+						ROOT = {
+							is_7p_nation = yes
+						}
+					}
+					add_to_variable = { faction_04 = 7 }
+				}
+				else_if = { 
+					limit = {
+						ROOT = {
+							is_6p_nation = yes
+						}
+					}
+					add_to_variable = { faction_04 = 6 }
+				}
+				else_if = { 
+					limit = {
+						ROOT = {
+							is_5p_nation = yes
+						}
+					}
+					add_to_variable = { faction_04 = 5 }
+				}
+				else_if = { 
+					limit = {
+						ROOT = {
+							is_4p_nation = yes
+						}
+					}
+					add_to_variable = { faction_04 = 4 }
+				}
+				else_if = { 
+					limit = {
+						ROOT = {
+							is_3p_nation = yes
+						}
+					}
+					add_to_variable = { faction_04 = 3 }
+				}
+				else_if = { 
+					limit = {
+						ROOT = {
+							is_1p_nation = yes
+						}
+					}
+					add_to_variable = { faction_04 = 1 }
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { faction_04 = 1 compare = greater_than_or_equals }
+					ROOT = {
+						NOT = {
+							OR = {
+								has_idea = faction_points_faction_01
+								has_idea = faction_points_faction_02
+								has_idea = faction_points_faction_03
+								has_idea = faction_points_faction_04
+								has_idea = faction_points_faction_06
+								has_idea = faction_points_faction_07
+								has_idea = faction_points_faction_08
+								has_idea = faction_points_faction_09
+								has_idea = faction_points_faction_10
+							} 
+						}
+					}
+				}
+				ROOT = { add_ideas = faction_points_faction_05 }
+				if = { 
+					limit = {
+						ROOT = {
+							is_7p_nation = yes
+						}
+					}
+					add_to_variable = { faction_05 = 7 }
+				}
+				else_if = { 
+					limit = {
+						ROOT = {
+							is_6p_nation = yes
+						}
+					}
+					add_to_variable = { faction_05 = 6 }
+				}
+				else_if = { 
+					limit = {
+						ROOT = {
+							is_5p_nation = yes
+						}
+					}
+					add_to_variable = { faction_05 = 5 }
+				}
+				else_if = { 
+					limit = {
+						ROOT = {
+							is_4p_nation = yes
+						}
+					}
+					add_to_variable = { faction_05 = 4 }
+				}
+				else_if = { 
+					limit = {
+						ROOT = {
+							is_3p_nation = yes
+						}
+					}
+					add_to_variable = { faction_05 = 3 }
+				}
+				else_if = { 
+					limit = {
+						ROOT = {
+							is_1p_nation = yes
+						}
+					}
+					add_to_variable = { faction_05 = 1 }
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { faction_05 = 1 compare = greater_than_or_equals }
+					ROOT = {
+						NOT = {
+							OR = {
+								has_idea = faction_points_faction_01
+								has_idea = faction_points_faction_02
+								has_idea = faction_points_faction_03
+								has_idea = faction_points_faction_04
+								has_idea = faction_points_faction_05
+								has_idea = faction_points_faction_07
+								has_idea = faction_points_faction_08
+								has_idea = faction_points_faction_09
+								has_idea = faction_points_faction_10
+							} 
+						}
+					}
+				}
+				ROOT = { add_ideas = faction_points_faction_06 }
+				if = { 
+					limit = {
+						ROOT = {
+							is_7p_nation = yes
+						}
+					}
+					add_to_variable = { faction_06 = 7 }
+				}
+				else_if = { 
+					limit = {
+						ROOT = {
+							is_6p_nation = yes
+						}
+					}
+					add_to_variable = { faction_06 = 6 }
+				}
+				else_if = { 
+					limit = {
+						ROOT = {
+							is_5p_nation = yes
+						}
+					}
+					add_to_variable = { faction_06 = 5 }
+				}
+				else_if = { 
+					limit = {
+						ROOT = {
+							is_4p_nation = yes
+						}
+					}
+					add_to_variable = { faction_06 = 4 }
+				}
+				else_if = { 
+					limit = {
+						ROOT = {
+							is_3p_nation = yes
+						}
+					}
+					add_to_variable = { faction_06 = 3 }
+				}
+				else_if = { 
+					limit = {
+						ROOT = {
+							is_1p_nation = yes
+						}
+					}
+					add_to_variable = { faction_06 = 1 }
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { faction_06 = 1 compare = greater_than_or_equals }
+					ROOT = {
+						NOT = {
+							OR = {
+								has_idea = faction_points_faction_01
+								has_idea = faction_points_faction_02
+								has_idea = faction_points_faction_03
+								has_idea = faction_points_faction_04
+								has_idea = faction_points_faction_05
+								has_idea = faction_points_faction_06
+								has_idea = faction_points_faction_08
+								has_idea = faction_points_faction_09
+								has_idea = faction_points_faction_10
+							} 
+						}
+					}
+				}
+				ROOT = { add_ideas = faction_points_faction_07 }
+				if = { 
+					limit = {
+						ROOT = {
+							is_7p_nation = yes
+						}
+					}
+					add_to_variable = { faction_07 = 7 }
+				}
+				else_if = { 
+					limit = {
+						ROOT = {
+							is_6p_nation = yes
+						}
+					}
+					add_to_variable = { faction_07 = 6 }
+				}
+				else_if = { 
+					limit = {
+						ROOT = {
+							is_5p_nation = yes
+						}
+					}
+					add_to_variable = { faction_07 = 5 }
+				}
+				else_if = { 
+					limit = {
+						ROOT = {
+							is_4p_nation = yes
+						}
+					}
+					add_to_variable = { faction_07 = 4 }
+				}
+				else_if = { 
+					limit = {
+						ROOT = {
+							is_3p_nation = yes
+						}
+					}
+					add_to_variable = { faction_07 = 3 }
+				}
+				else_if = { 
+					limit = {
+						ROOT = {
+							is_1p_nation = yes
+						}
+					}
+					add_to_variable = { faction_07 = 1 }
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { faction_07 = 1 compare = greater_than_or_equals }
+					ROOT = {
+						NOT = {
+							OR = {
+								has_idea = faction_points_faction_01
+								has_idea = faction_points_faction_02
+								has_idea = faction_points_faction_03
+								has_idea = faction_points_faction_04
+								has_idea = faction_points_faction_05
+								has_idea = faction_points_faction_06
+								has_idea = faction_points_faction_07
+								has_idea = faction_points_faction_09
+								has_idea = faction_points_faction_10
+							} 
+						}
+					}
+				}
+				ROOT = { add_ideas = faction_points_faction_08 }
+				if = { 
+					limit = {
+						ROOT = {
+							is_7p_nation = yes
+						}
+					}
+					add_to_variable = { faction_08 = 7 }
+				}
+				else_if = { 
+					limit = {
+						ROOT = {
+							is_6p_nation = yes
+						}
+					}
+					add_to_variable = { faction_08 = 6 }
+				}
+				else_if = { 
+					limit = {
+						ROOT = {
+							is_5p_nation = yes
+						}
+					}
+					add_to_variable = { faction_08 = 5 }
+				}
+				else_if = { 
+					limit = {
+						ROOT = {
+							is_4p_nation = yes
+						}
+					}
+					add_to_variable = { faction_08 = 4 }
+				}
+				else_if = { 
+					limit = {
+						ROOT = {
+							is_3p_nation = yes
+						}
+					}
+					add_to_variable = { faction_08 = 3 }
+				}
+				else_if = { 
+					limit = {
+						ROOT = {
+							is_1p_nation = yes
+						}
+					}
+					add_to_variable = { faction_08 = 1 }
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { faction_08 = 1 compare = greater_than_or_equals }
+					ROOT = {
+						NOT = {
+							OR = {
+								has_idea = faction_points_faction_01
+								has_idea = faction_points_faction_02
+								has_idea = faction_points_faction_03
+								has_idea = faction_points_faction_04
+								has_idea = faction_points_faction_05
+								has_idea = faction_points_faction_06
+								has_idea = faction_points_faction_07
+								has_idea = faction_points_faction_08
+								has_idea = faction_points_faction_10
+							} 
+						}
+					}
+				}
+				ROOT = { add_ideas = faction_points_faction_09 }
+				if = { 
+					limit = {
+						ROOT = {
+							is_7p_nation = yes
+						}
+					}
+					add_to_variable = { faction_09 = 7 }
+				}
+				else_if = { 
+					limit = {
+						ROOT = {
+							is_6p_nation = yes
+						}
+					}
+					add_to_variable = { faction_09 = 6 }
+				}
+				else_if = { 
+					limit = {
+						ROOT = {
+							is_5p_nation = yes
+						}
+					}
+					add_to_variable = { faction_09 = 5 }
+				}
+				else_if = { 
+					limit = {
+						ROOT = {
+							is_4p_nation = yes
+						}
+					}
+					add_to_variable = { faction_09 = 4 }
+				}
+				else_if = { 
+					limit = {
+						ROOT = {
+							is_3p_nation = yes
+						}
+					}
+					add_to_variable = { faction_09 = 3 }
+				}
+				else_if = { 
+					limit = {
+						ROOT = {
+							is_1p_nation = yes
+						}
+					}
+					add_to_variable = { faction_09 = 1 }
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { faction_09 = 1 compare = greater_than_or_equals }
+					ROOT = {
+						NOT = {
+							OR = {
+								has_idea = faction_points_faction_01
+								has_idea = faction_points_faction_02
+								has_idea = faction_points_faction_03
+								has_idea = faction_points_faction_04
+								has_idea = faction_points_faction_05
+								has_idea = faction_points_faction_06
+								has_idea = faction_points_faction_07
+								has_idea = faction_points_faction_08
+								has_idea = faction_points_faction_09
+							} 
+						}
+					}
+				}
+				ROOT = { add_ideas = faction_points_faction_10 }
+				if = { 
+					limit = {
+						ROOT = {
+							is_7p_nation = yes
+						}
+					}
+					add_to_variable = { faction_10 = 7 }
+				}
+				else_if = { 
+					limit = {
+						ROOT = {
+							is_6p_nation = yes
+						}
+					}
+					add_to_variable = { faction_10 = 6 }
+				}
+				else_if = { 
+					limit = {
+						ROOT = {
+							is_5p_nation = yes
+						}
+					}
+					add_to_variable = { faction_10 = 5 }
+				}
+				else_if = { 
+					limit = {
+						ROOT = {
+							is_4p_nation = yes
+						}
+					}
+					add_to_variable = { faction_10 = 4 }
+				}
+				else_if = { 
+					limit = {
+						ROOT = {
+							is_3p_nation = yes
+						}
+					}
+					add_to_variable = { faction_10 = 3 }
+				}
+				else_if = { 
+					limit = {
+						ROOT = {
+							is_1p_nation = yes
+						}
+					}
+					add_to_variable = { faction_10 = 1 }
+				}
+			}
+		}
+	}
+	on_join_faction = {
+		effect = {
+		}
+	}
+	on_offer_join_faction = {
+		effect = {
+			faction_01_joining_effect = yes
+			faction_03_joining_effect = yes
+			faction_04_joining_effect = yes
+			faction_05_joining_effect = yes
+			faction_06_joining_effect = yes
+			faction_07_joining_effect = yes
+			faction_08_joining_effect = yes
+			faction_09_joining_effect = yes
+			faction_10_joining_effect = yes
+			faction_allies_joining_effect = yes
+			faction_axis_joining_effect = yes
+			faction_commintern_joining_effect = yes
+		}
+	}
+}

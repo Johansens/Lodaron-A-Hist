@@ -173,7 +173,7 @@ on_actions = {
 							is_1p_nation = yes
 						}
 					}
-					add_to_variable = { faction_01 =  }
+					add_to_variable = { faction_01 = 1 }
 				}
 			}
 			if = {
@@ -820,4 +820,5 @@ on_actions = {
 			faction_commintern_joining_effect = yes
 		}
 	}
+	on_leave_faction
 }

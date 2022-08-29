@@ -820,5 +820,21 @@ on_actions = {
 			faction_commintern_joining_effect = yes
 		}
 	}
-	on_leave_faction
+	on_leave_faction = {
+		effect = {
+			faction_01_leaving_effect = yes
+			faction_02_leaving_effect = yes
+			faction_03_leaving_effect = yes
+			faction_04_leaving_effect = yes	
+			faction_05_leaving_effect = yes
+			faction_06_leaving_effect = yes
+			faction_07_leaving_effect = yes
+			faction_08_leaving_effect = yes
+			faction_09_leaving_effect = yes
+			faction_10_leaving_effect = yes
+			faction_allies_leaving_effect = yes
+			faction_axis_leaving_effect = yes
+			faction_commintern_leaving_effect = yes
+		}
+	}
 }

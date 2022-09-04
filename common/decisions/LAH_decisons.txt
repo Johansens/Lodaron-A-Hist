@@ -216,7 +216,9 @@ LAH_decisions = {
 			is_in_faction = no
 		}
 		visible = {
-			has_idea = { faction_points_faction_01 }
+			ROOT = {
+				has_idea = { faction_points_faction_01 }
+			}
 		}
 		cost = 0
 		complete_effect = {
@@ -231,7 +233,9 @@ LAH_decisions = {
 			is_in_faction = no
 		}
 		visible = {
-			has_idea = { faction_points_faction_02 }
+			ROOT = {
+				has_idea = { faction_points_faction_02 }
+			}
 		}
 		cost = 0
 		complete_effect = {
@@ -246,7 +250,9 @@ LAH_decisions = {
 			is_in_faction = no
 		}
 		visible = {
-			has_idea = { faction_points_faction_03 }
+			ROOT = {
+				has_idea = { faction_points_faction_03 }
+			}
 		}
 		cost = 0
 		complete_effect = {
@@ -261,7 +267,9 @@ LAH_decisions = {
 			is_in_faction = no
 		}
 		visible = {
-			has_idea = { faction_points_faction_04 }
+			ROOT = {
+				has_idea = { faction_points_faction_04 }
+			}
 		}
 		cost = 0
 		complete_effect = {
@@ -276,7 +284,9 @@ LAH_decisions = {
 			is_in_faction = no
 		}
 		visible = {
-			has_idea = { faction_points_faction_05 }
+			ROOT = {
+				has_idea = { faction_points_faction_05 }
+			}
 		}
 		cost = 0
 		complete_effect = {
@@ -291,7 +301,9 @@ LAH_decisions = {
 			is_in_faction = no
 		}
 		visible = {
-			has_idea = { faction_points_faction_06 }
+			ROOT = {
+				has_idea = { faction_points_faction_06 }
+			}
 		}
 		cost = 0
 		complete_effect = {
@@ -306,7 +318,9 @@ LAH_decisions = {
 			is_in_faction = no
 		}
 		visible = {
-			has_idea = { faction_points_faction_07 }
+			ROOT = {
+				has_idea = { faction_points_faction_07 }
+			}
 		}
 		cost = 0
 		complete_effect = {
@@ -321,7 +335,9 @@ LAH_decisions = {
 			is_in_faction = no
 		}
 		visible = {
-			has_idea = { faction_points_faction_08 }
+			ROOT = {
+				has_idea = { faction_points_faction_08 }
+			}
 		}
 		cost = 0
 		complete_effect = {
@@ -336,7 +352,9 @@ LAH_decisions = {
 			is_in_faction = no
 		}
 		visible = {
-			has_idea = { faction_points_faction_09 }
+			ROOT = {
+				has_idea = { faction_points_faction_09 }
+			}
 		}
 		cost = 0
 		complete_effect = {
@@ -351,7 +369,9 @@ LAH_decisions = {
 			is_in_faction = no
 		}
 		visible = {
-			has_idea = { faction_points_faction_10 }
+			ROOT = {
+				has_idea = { faction_points_faction_10 }
+			}
 		}
 		cost = 0
 		complete_effect = {
@@ -390,7 +410,7 @@ LAH_decisions = {
 			remove_ideas = { faction_points_axis }
 		}
 	}
-	"Reset Faction Point System Axis" = {
+	"Reset Faction Point System Commintern" = {
 		icon = generic_operation
 		fire_only_once = no
 		available = {

@@ -61,7 +61,7 @@ faction_01_joining_effect = {
 						has_idea = faction_points_faction_01
 					}
 					FROM = {
-						is_7p_nation = yes
+						is_1p_nation = yes
 					}
 				}
 				add_to_variable = { faction_01 = 1 }
@@ -129,7 +129,7 @@ faction_02_joining_effect = {
 						has_idea = faction_points_faction_02
 					}
 					FROM = {
-						is_7p_nation = yes
+						is_1p_nation = yes
 					}
 				}
 				add_to_variable = { faction_02 = 1 }
@@ -197,7 +197,7 @@ faction_03_joining_effect = {
 						has_idea = faction_points_faction_03
 					}
 					FROM = {
-						is_7p_nation = yes
+						is_1p_nation = yes
 					}
 				}
 				add_to_variable = { faction_03 = 1 }
@@ -265,7 +265,7 @@ faction_04_joining_effect = {
 						has_idea = faction_points_faction_04
 					}
 					FROM = {
-						is_7p_nation = yes
+						is_1p_nation = yes
 					}
 				}
 				add_to_variable = { faction_04 = 1 }
@@ -333,7 +333,7 @@ faction_05_joining_effect = {
 						has_idea = faction_points_faction_05
 					}
 					FROM = {
-						is_7p_nation = yes
+						is_1p_nation = yes
 					}
 				}
 				add_to_variable = { faction_05 = 1 }
@@ -401,7 +401,7 @@ faction_06_joining_effect = {
 						has_idea = faction_points_faction_06
 					}
 					FROM = {
-						is_7p_nation = yes
+						is_1p_nation = yes
 					}
 				}
 				add_to_variable = { faction_06 = 1 }
@@ -469,7 +469,7 @@ faction_07_joining_effect = {
 						has_idea = faction_points_faction_07
 					}
 					FROM = {
-						is_7p_nation = yes
+						is_1p_nation = yes
 					}
 				}
 				add_to_variable = { faction_07 = 1 }
@@ -537,7 +537,7 @@ faction_08_joining_effect = {
 						has_idea = faction_points_faction_08
 					}
 					FROM = {
-						is_7p_nation = yes
+						is_1p_nation = yes
 					}
 				}
 				add_to_variable = { faction_08 = 1 }
@@ -605,7 +605,7 @@ faction_09_joining_effect = {
 						has_idea = faction_points_faction_09
 					}
 					FROM = {
-						is_7p_nation = yes
+						is_1p_nation = yes
 					}
 				}
 				add_to_variable = { faction_09 = 1 }
@@ -673,7 +673,7 @@ faction_10_joining_effect = {
 						has_idea = faction_points_faction_10
 					}
 					FROM = {
-						is_7p_nation = yes
+						is_1p_nation = yes
 					}
 				}
 				add_to_variable = { faction_10 = 1 }
@@ -747,7 +747,7 @@ faction_allies_joining_effect = {
 						original_tag = ENG
 					}
 					FROM = {
-						is_7p_nation = yes
+						is_1p_nation = yes
 					}
 				}
 				add_to_variable = { allies_p = 1 }
@@ -821,7 +821,7 @@ faction_axis_joining_effect = {
 						original_tag = GER
 					}
 					FROM = {
-						is_7p_nation = yes
+						is_1p_nation = yes
 					}
 				}
 				add_to_variable = { Axis_p = 1 }
@@ -889,7 +889,7 @@ faction_commintern_joining_effect = {
 						has_idea = faction_points_commintern
 					}
 					FROM = {
-						is_7p_nation = yes
+						is_1p_nation = yes
 					}
 				}
 				add_to_variable = { Comintern_p = 1 }

@@ -213,12 +213,12 @@ LAH_decisions = {
 		icon = generic_operation
 		fire_only_once = no
 		available = {
-			is_in_faction = no
+			ROOT = {
+				has_idea =  faction_points_faction_01 
+			}
 		}
 		visible = {
-			ROOT = {
-				has_ideas = { faction_points_faction_01 }
-			}
+			is_in_faction = no
 		}
 		cost = 0
 		complete_effect = {
@@ -230,12 +230,12 @@ LAH_decisions = {
 		icon = generic_operation
 		fire_only_once = no
 		available = {
-			is_in_faction = no
+			ROOT = {
+				has_idea =  faction_points_faction_02 
+			}
 		}
 		visible = {
-			ROOT = {
-				has_ideas = { faction_points_faction_02 }
-			}
+			is_in_faction = no
 		}
 		cost = 0
 		complete_effect = {
@@ -247,12 +247,12 @@ LAH_decisions = {
 		icon = generic_operation
 		fire_only_once = no
 		available = {
-			is_in_faction = no
+			ROOT = {
+				has_idea =  faction_points_faction_03 
+			}
 		}
 		visible = {
-			ROOT = {
-				has_ideas = { faction_points_faction_03 }
-			}
+			is_in_faction = no
 		}
 		cost = 0
 		complete_effect = {
@@ -264,12 +264,12 @@ LAH_decisions = {
 		icon = generic_operation
 		fire_only_once = no
 		available = {
-			is_in_faction = no
+			ROOT = {
+				has_idea =  faction_points_faction_04 
+			}
 		}
 		visible = {
-			ROOT = {
-				has_ideas = { faction_points_faction_04 }
-			}
+			is_in_faction = no
 		}
 		cost = 0
 		complete_effect = {
@@ -281,12 +281,12 @@ LAH_decisions = {
 		icon = generic_operation
 		fire_only_once = no
 		available = {
-			is_in_faction = no
+			ROOT = {
+				has_idea =  faction_points_faction_05 
+			}
 		}
 		visible = {
-			ROOT = {
-				has_ideas = { faction_points_faction_05 }
-			}
+			is_in_faction = no
 		}
 		cost = 0
 		complete_effect = {
@@ -298,13 +298,13 @@ LAH_decisions = {
 		icon = generic_operation
 		fire_only_once = no
 		available = {
-			is_in_faction = no
-		}
-		visible = {
 			ROOT = {
-				has_ideas = { faction_points_faction_06 }
+				has_idea =  faction_points_faction_06 
 			}
 		}
+		visible = {
+			is_in_faction = no
+		}	
 		cost = 0
 		complete_effect = {
 			set_variable = { var = faction_06 value = 0 }
@@ -315,12 +315,12 @@ LAH_decisions = {
 		icon = generic_operation
 		fire_only_once = no
 		available = {
-			is_in_faction = no
+			ROOT = {
+				has_idea =  faction_points_faction_07 
+			}
 		}
 		visible = {
-			ROOT = {
-				has_ideas = { faction_points_faction_07 }
-			}
+			is_in_faction = no
 		}
 		cost = 0
 		complete_effect = {
@@ -332,16 +332,16 @@ LAH_decisions = {
 		icon = generic_operation
 		fire_only_once = no
 		available = {
-			is_in_faction = no
+			ROOT = {
+				has_idea =  faction_points_faction_08 
+			}
 		}
 		visible = {
-			ROOT = {
-				has_ideas = { faction_points_faction_08 }
-			}
+			is_in_faction = no
 		}
 		cost = 0
 		complete_effect = {
-			set_variable = { var = faction_018value = 0 }
+			set_variable = { var = faction_018 value = 0 }
 			remove_ideas = { faction_points_faction_08 }
 		}
 	}
@@ -349,12 +349,12 @@ LAH_decisions = {
 		icon = generic_operation
 		fire_only_once = no
 		available = {
-			is_in_faction = no
+			ROOT = {
+				has_idea =  faction_points_faction_09 
+			}
 		}
 		visible = {
-			ROOT = {
-				has_ideas = { faction_points_faction_09 }
-			}
+			is_in_faction = no
 		}
 		cost = 0
 		complete_effect = {
@@ -366,12 +366,12 @@ LAH_decisions = {
 		icon = generic_operation
 		fire_only_once = no
 		available = {
-			is_in_faction = no
+			ROOT = {
+				has_idea =  faction_points_faction_10 
+			}
 		}
 		visible = {
-			ROOT = {
-				has_ideas = { faction_points_faction_10 }
-			}
+			is_in_faction = no
 		}
 		cost = 0
 		complete_effect = {

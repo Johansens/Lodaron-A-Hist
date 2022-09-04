@@ -56,7 +56,7 @@ LAH_decisions = {
             always = yes
         }
         cost = 150
-        days_re_enable = 90
+        days_re_enable = 360
 
 	
 		complete_effect = {

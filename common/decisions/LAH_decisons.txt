@@ -217,7 +217,7 @@ LAH_decisions = {
 		}
 		visible = {
 			ROOT = {
-				has_idea = { faction_points_faction_01 }
+				has_ideas = { faction_points_faction_01 }
 			}
 		}
 		cost = 0
@@ -234,7 +234,7 @@ LAH_decisions = {
 		}
 		visible = {
 			ROOT = {
-				has_idea = { faction_points_faction_02 }
+				has_ideas = { faction_points_faction_02 }
 			}
 		}
 		cost = 0
@@ -251,7 +251,7 @@ LAH_decisions = {
 		}
 		visible = {
 			ROOT = {
-				has_idea = { faction_points_faction_03 }
+				has_ideas = { faction_points_faction_03 }
 			}
 		}
 		cost = 0
@@ -268,7 +268,7 @@ LAH_decisions = {
 		}
 		visible = {
 			ROOT = {
-				has_idea = { faction_points_faction_04 }
+				has_ideas = { faction_points_faction_04 }
 			}
 		}
 		cost = 0
@@ -285,7 +285,7 @@ LAH_decisions = {
 		}
 		visible = {
 			ROOT = {
-				has_idea = { faction_points_faction_05 }
+				has_ideas = { faction_points_faction_05 }
 			}
 		}
 		cost = 0
@@ -302,7 +302,7 @@ LAH_decisions = {
 		}
 		visible = {
 			ROOT = {
-				has_idea = { faction_points_faction_06 }
+				has_ideas = { faction_points_faction_06 }
 			}
 		}
 		cost = 0
@@ -319,7 +319,7 @@ LAH_decisions = {
 		}
 		visible = {
 			ROOT = {
-				has_idea = { faction_points_faction_07 }
+				has_ideas = { faction_points_faction_07 }
 			}
 		}
 		cost = 0
@@ -336,7 +336,7 @@ LAH_decisions = {
 		}
 		visible = {
 			ROOT = {
-				has_idea = { faction_points_faction_08 }
+				has_ideas = { faction_points_faction_08 }
 			}
 		}
 		cost = 0
@@ -353,7 +353,7 @@ LAH_decisions = {
 		}
 		visible = {
 			ROOT = {
-				has_idea = { faction_points_faction_09 }
+				has_ideas = { faction_points_faction_09 }
 			}
 		}
 		cost = 0
@@ -370,7 +370,7 @@ LAH_decisions = {
 		}
 		visible = {
 			ROOT = {
-				has_idea = { faction_points_faction_10 }
+				has_ideas = { faction_points_faction_10 }
 			}
 		}
 		cost = 0

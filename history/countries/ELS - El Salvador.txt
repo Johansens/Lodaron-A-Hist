@@ -30,18 +30,6 @@ recruit_character = ELS_oscar_a_bolanos
 recruit_character = ELS_salvador_castaneda_castro
 recruit_character = ELS_jose_maria_cuellar
 
-add_ideas = {
-  ca_great_depression
-}
-
-set_variable = { PP_C_ELS = 0.2 }
-set_variable = { CG_F_ELS = 0.2 }
-set_variable = { ICF_F_ELS = -0.1 }
-set_variable = { BS_F_ELS = -0.15 }
-set_variable = { ST_F_ELS = -0.15 }
-
-add_dynamic_modifier = { modifier = ca_depression_modifier_ELS }
-
 set_country_flag = monroe_doctrine
 set_war_support = 0.1
 set_convoys = 5

@@ -1,0 +1,21 @@
+﻿
+add_namespace = LAH_events
+
+
+
+country_event = {
+	id = LAH_events.1
+	title = "Depression fixer event "
+	desc =  "can be ignored"
+	hidden = yes
+	picture = GFX_report_event_canada_treaty
+	is_triggered_only = yes
+	immediate = {
+		set_variable = { PP_C_ELS = 0.2 }
+		set_variable = { CG_F_ELS = 0.2 }
+		set_variable = { ICF_F_ELS = -0.1 }
+		set_variable = { BS_F_ELS = -0.15 }
+		set_variable = { ST_F_ELS = -0.15 }
+	}
+}
+

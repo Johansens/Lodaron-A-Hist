@@ -54,6 +54,12 @@ on_actions = {
 					add_to_variable = { Comintern_p = 1 }
 				}
 			}
+			ELS = {
+				add_dynamic_modifier = {
+					modifier = ca_depression_modifier_ELS 
+				}
+				country_event = { id = LAH_events.1 hours = 1 }
+			}
 		}
 	}
 	on_create_faction = {

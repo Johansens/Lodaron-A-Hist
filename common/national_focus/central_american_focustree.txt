@@ -206,7 +206,10 @@ focus_tree = {
 		}
 		mutually_exclusive = { focus = ELS_forge_our_own_path  }
 		allow_branch = {
-					NOT = { has_completed_focus = ELS_forge_our_own_path }
+			NOT = { has_completed_focus = ELS_forge_our_own_path }
+		}
+		available = {
+
 		}
 		completion_reward = { add_political_power = 50 }
 	}
@@ -215,15 +218,19 @@ focus_tree = {
 	focus = {
 		id = ELS_forge_our_own_path
 		icon = GFX_focus_eng_move_to_secure_the_dominions
-		x = 26
-		y = 1
+		x = 8
+		y = 0
 		cost = 5
+		relative_position_id = ELS_go_with_america
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
 		mutually_exclusive = { focus = ELS_go_with_america  }
 		allow_branch = {
-					NOT = { has_completed_focus = ELS_go_with_america }
+			NOT = { has_completed_focus = ELS_go_with_america }
+		}
+		available = {
+
 		}
 		completion_reward = { 
 		add_political_power = 25 
@@ -1206,7 +1213,8 @@ focus_tree = {
 		prerequisite = { focus = ELS_march_on_the_capital  }
 		mutually_exclusive = { focus = ELS_the_militants_form_a_government  }
 		allow_branch = {
-					NOT = { has_completed_focus = ELS_the_militants_form_a_government }
+			NOT = { has_completed_focus = ELS_go_with_america }
+			NOT = { has_completed_focus = ELS_the_militants_form_a_government }
 		}
 		completion_reward = {
 		add_popularity = { 
@@ -1240,7 +1248,8 @@ focus_tree = {
 		prerequisite = { focus = ELS_march_on_the_capital  }
 		mutually_exclusive = { focus = ELS_the_peoples_union  }
 		allow_branch = {
-					NOT = { has_completed_focus = ELS_the_peoples_union }
+			NOT = { has_completed_focus = ELS_go_with_america }
+			NOT = { has_completed_focus = ELS_the_peoples_union }
 		}
 		completion_reward = {
 		add_popularity = { 

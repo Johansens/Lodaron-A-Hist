@@ -26,14 +26,14 @@ scripted_gui = {
 				THIS = { 
 					set_state_flag = marked_for_transfer 
 				}
-				add_to_variable = { ROOT.marked_states = 1 }
+				add_to_variable = { ROOT.marked_states.st = 1 }
 			}
 			
 			st_unmark_click = {
 				THIS = { 
 					clr_state_flag = marked_for_transfer 
 				}
-				subtract_from_variable = { ROOT.marked_states = 1 }
+				subtract_from_variable = { ROOT.marked_states.st = 1 }
 			}
 			
 			mark_all_states_click = {
@@ -43,7 +43,7 @@ scripted_gui = {
 							NOT = { has_state_flag = marked_for_transfer }
 						}
 						set_state_flag = marked_for_transfer
-						add_to_variable = { ROOT.marked_states = 1 }
+						add_to_variable = { ROOT.marked_states.st = 1 }
 					}
 				}
 			}
@@ -57,7 +57,7 @@ scripted_gui = {
 							NOT = { has_state_flag = marked_for_transfer }
 						}
 						set_state_flag = marked_for_transfer
-						add_to_variable = { ROOT.marked_states = 1 }
+						add_to_variable = { ROOT.marked_states.st = 1 }
 					}
 				}
 			}
@@ -99,7 +99,7 @@ scripted_gui = {
 			}
 			
 			clear_all_markings_click_enabled = {
-				check_variable = { ROOT.marked_states > 0 }
+				check_variable = { ROOT.marked_states.st > 0 }
 			}
 		
 		}

@@ -46,7 +46,7 @@ scripted_gui = {
 					set_state_flag = marked_for_transfer
 					#set_border_war = yes
 				}
-				add_to_variable = { ROOT.marked_states = 1 }
+				add_to_variable = { ROOT.marked_states.st = 1 }
 			}
 			
 			st_state_manager_power_unmark_for_transfer_click = {
@@ -54,7 +54,7 @@ scripted_gui = {
 					clr_state_flag = marked_for_transfer 
 					#set_border_war = no
 				}
-				subtract_from_variable = { ROOT.marked_states = 1 }
+				subtract_from_variable = { ROOT.marked_states.st = 1 }
 			}
 		}
 		

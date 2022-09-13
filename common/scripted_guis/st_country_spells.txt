@@ -23,7 +23,7 @@ scripted_gui = {
 							NOT = { has_state_flag = marked_for_transfer }
 						}
 						set_state_flag = marked_for_transfer
-						add_to_variable = { ROOT.marked_states = 1 }
+						add_to_variable = { ROOT.marked_states.st = 1 }
 						#set_border_war = yes
 					}
 				}
@@ -39,7 +39,7 @@ scripted_gui = {
 							NOT = { has_state_flag = marked_for_transfer }
 						}
 						set_state_flag = marked_for_transfer
-						add_to_variable = { ROOT.marked_states = 1 }
+						add_to_variable = { ROOT.marked_states.st = 1 }
 						#set_border_war = yes
 					}
 				}
@@ -168,11 +168,11 @@ scripted_gui = {
 			}
 			
 			clear_all_markings_click_enabled = {
-				check_variable = { ROOT.marked_states > 0 }
+				check_variable = { ROOT.marked_states.st > 0 }
 			}
 		
 			award_states_click_enabled = {
-				check_variable = { ROOT.marked_states > 0 }
+				check_variable = { ROOT.marked_states.st > 0 }
 				NOT = { 
 					ROOT = { 
 						all_owned_state = {

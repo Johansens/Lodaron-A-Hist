@@ -18,11 +18,11 @@ scripted_gui = {
 		effects = {
 			open_ST_click = {
 				if = {
-					limit = { ROOT = { NOT = { has_country_flag = transfer_enabled } } }
-					ROOT = { set_country_flag = transfer_enabled }
+					limit = { ROOT = { NOT = { has_country_flag = transfer_enabled_st } } }
+					ROOT = { set_country_flag = transfer_enabled_st }
 				}
 				else = {
-					ROOT = { clr_country_flag = transfer_enabled }
+					ROOT = { clr_country_flag = transfer_enabled_st }
 				}
 			}
 		}

@@ -3,7 +3,7 @@ defined_text = { # state
 
 	text = {
 		trigger = {
-			has_state_flag = marked_for_transfer_st
+			has_state_flag = marked_for_transfer
 		}
 		localization_key = "st_give_state_marked_entry"
 	}

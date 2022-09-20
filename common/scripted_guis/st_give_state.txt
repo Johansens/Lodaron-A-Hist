@@ -24,26 +24,26 @@ scripted_gui = {
 		effects = {
 			st_mark_click = {
 				THIS = { 
-					set_state_flag = marked_for_transfer_st 
+					set_state_flag = marked_for_transfer 
 				}
-				add_to_variable = { ROOT.marked_states_st = 1 }
+				add_to_variable = { ROOT.marked_states = 1 }
 			}
 			
 			st_unmark_click = {
 				THIS = { 
-					clr_state_flag = marked_for_transfer_st 
+					clr_state_flag = marked_for_transfer 
 				}
-				subtract_from_variable = { ROOT.marked_states_st = 1 }
+				subtract_from_variable = { ROOT.marked_states = 1 }
 			}
 			
 			mark_all_states_click = {
 				ROOT = {
 					every_owned_state = {
 						limit = {
-							NOT = { has_state_flag = marked_for_transfer_st }
+							NOT = { has_state_flag = marked_for_transfer }
 						}
-						set_state_flag = marked_for_transfer_st
-						add_to_variable = { ROOT.marked_states_st = 1 }
+						set_state_flag = marked_for_transfer
+						add_to_variable = { ROOT.marked_states = 1 }
 					}
 				}
 			}
@@ -54,24 +54,24 @@ scripted_gui = {
 						limit = {
 							NOT = { is_in_home_area = yes }
 							NOT = { is_core_of = PREV }
-							NOT = { has_state_flag = marked_for_transfer_st }
+							NOT = { has_state_flag = marked_for_transfer }
 						}
-						set_state_flag = marked_for_transfer_st
-						add_to_variable = { ROOT.marked_states_st = 1 }
+						set_state_flag = marked_for_transfer
+						add_to_variable = { ROOT.marked_states = 1 }
 					}
 				}
 			}
 		
 			clear_all_markings_click = {
 				ROOT = { 
-					set_variable = { marked_states_st = 0 }
+					set_variable = { marked_states = 0 }
 				}
 				every_state = {
 					limit = {
-						has_state_flag = marked_for_transfer_st
+						has_state_flag = marked_for_transfer
 						is_owned_and_controlled_by = ROOT
 					}
-					clr_state_flag = marked_for_transfer_st
+					clr_state_flag = marked_for_transfer
 				}
 			}
 			
@@ -82,7 +82,7 @@ scripted_gui = {
 			mark_all_states_click_enabled = {
 				ROOT = { 
 					any_owned_state = {
-						NOT = { has_state_flag = marked_for_transfer_st }
+						NOT = { has_state_flag = marked_for_transfer }
 					}
 				}
 			}
@@ -91,7 +91,7 @@ scripted_gui = {
 				ROOT = { 
 					any_owned_state = {
 						NOT = { is_in_home_area = yes }
-						NOT = { has_state_flag = marked_for_transfer_st }
+						NOT = { has_state_flag = marked_for_transfer }
 						NOT = { is_core_of = ROOT }
 						is_fully_controlled_by = ROOT
 					}
@@ -99,7 +99,7 @@ scripted_gui = {
 			}
 			
 			clear_all_markings_click_enabled = {
-				check_variable = { ROOT.marked_states_st > 0 }
+				check_variable = { ROOT.marked_states > 0 }
 			}
 		
 		}

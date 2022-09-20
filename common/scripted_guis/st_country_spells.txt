@@ -9,37 +9,37 @@ scripted_gui = {
 		visible = {
 			ROOT = {
 				is_ai = no
-				has_country_flag = transfer_enabled_st
+				has_country_flag = transfer_enabled
 			}
 		}
 		
 		effects = {
 		
 			mark_all_states_click = {
-				set_temp_variable = { ROOT.marks_st = this}
-				var:marks_st = {
+				set_temp_variable = { ROOT.marks = this}
+				var:marks = {
 					every_owned_state = {
 						limit = {
-							NOT = { has_state_flag = marked_for_transfer_st }
+							NOT = { has_state_flag = marked_for_transfer }
 						}
-						set_state_flag = marked_for_transfer_st
-						add_to_variable = { ROOT.marked_states_st = 1 }
+						set_state_flag = marked_for_transfer
+						add_to_variable = { ROOT.marked_states = 1 }
 						#set_border_war = yes
 					}
 				}
 			}
 		
 			mark_colonial_states_click  = {
-				set_temp_variable = { ROOT.marks_st = this}
-				var:marks_st = {
+				set_temp_variable = { ROOT.marks = this}
+				var:marks = {
 					every_owned_state = {
 						limit = {
 							NOT = { is_in_home_area = yes }
 							NOT = { is_core_of = PREV }
-							NOT = { has_state_flag = marked_for_transfer_st }
+							NOT = { has_state_flag = marked_for_transfer }
 						}
-						set_state_flag = marked_for_transfer_st
-						add_to_variable = { ROOT.marked_states_st = 1 }
+						set_state_flag = marked_for_transfer
+						add_to_variable = { ROOT.marked_states = 1 }
 						#set_border_war = yes
 					}
 				}
@@ -47,11 +47,11 @@ scripted_gui = {
 		
 			clear_all_markings_click = {
 				ROOT = { 
-					set_variable = { marked_states_st = 0 }
+					set_variable = { marked_states = 0 }
 				}
 				every_state = {
 					limit = {
-						has_state_flag = marked_for_transfer_st
+						has_state_flag = marked_for_transfer
 						OR = {
 							is_owned_and_controlled_by = ROOT
 							any_country = {
@@ -61,20 +61,20 @@ scripted_gui = {
 							}
 						}
 					}
-					clr_state_flag = marked_for_transfer_st
+					clr_state_flag = marked_for_transfer
 					#set_border_war = no
 				}
 			}
 			
 			award_states_click = {
 				ROOT = { 
-					set_variable = { marked_states_st = 0 }
+					set_variable = { marked_states = 0 }
 				}
-				set_temp_variable = { ROOT.taker_St = this}
+				set_temp_variable = { ROOT.taker = this}
 				
 				every_state = {
 					limit = {
-						has_state_flag = marked_for_transfer_st
+						has_state_flag = marked_for_transfer
 						OR = {
 							is_owned_and_controlled_by = ROOT
 							any_country = {
@@ -84,8 +84,8 @@ scripted_gui = {
 							}
 						}
 					}
-					var:taker_St = { transfer_state = PREV }
-					clr_state_flag = marked_for_transfer_st
+					var:taker = { transfer_state = PREV }
+					clr_state_flag = marked_for_transfer
 					#set_border_war = no
 				}
 			}
@@ -95,15 +95,15 @@ scripted_gui = {
 		
 			mark_all_states_click_enabled = {
 				any_owned_state = {
-					NOT = { has_state_flag = marked_for_transfer_st }
+					NOT = { has_state_flag = marked_for_transfer }
 				}
 			}
 			
 			mark_all_states_visible = {
-				set_temp_variable = { ROOT.taker_St = this}
+				set_temp_variable = { ROOT.taker = this}
 				OR = {
 					ROOT = {
-						tag = var:taker_St
+						tag = var:taker
 					}
 					AND = {
 						has_game_rule = {
@@ -132,16 +132,16 @@ scripted_gui = {
 			mark_colonial_states_click_enabled = {
 				any_owned_state = {
 					NOT = { is_in_home_area = yes }
-					NOT = { has_state_flag = marked_for_transfer_st }
+					NOT = { has_state_flag = marked_for_transfer }
 					NOT = { is_core_of = this }
 				}
 			}
 			
 			mark_colonial_states_visible = {
-				set_temp_variable = { ROOT.taker_St = this}
+				set_temp_variable = { ROOT.taker = this}
 				OR = {
 					ROOT = {
-						tag = var:taker_St
+						tag = var:taker
 					}
 					AND = {
 						has_game_rule = {
@@ -168,15 +168,15 @@ scripted_gui = {
 			}
 			
 			clear_all_markings_click_enabled = {
-				check_variable = { ROOT.marked_states_st > 0 }
+				check_variable = { ROOT.marked_states > 0 }
 			}
 		
 			award_states_click_enabled = {
-				check_variable = { ROOT.marked_states_st > 0 }
+				check_variable = { ROOT.marked_states > 0 }
 				NOT = { 
 					ROOT = { 
 						all_owned_state = {
-							has_state_flag = marked_for_transfer_st
+							has_state_flag = marked_for_transfer
 						} 
 					}
 				}

@@ -134,17 +134,17 @@ scripted_diplomatic_actions = {
 
 		complete_effect = {
 			ROOT = { 
-				set_variable = { marked_states_st = 0 }
+				set_variable = { marked_states = 0 }
 			}
-			set_temp_variable = { ROOT.taker_St = this}
+			set_temp_variable = { ROOT.taker = this}
 			
 			every_state = {
 				limit = {
-					has_state_flag = marked_for_transfer_st
+					has_state_flag = marked_for_transfer
 					is_owned_and_controlled_by = ROOT
 				}
-				var:taker_St = { transfer_state = PREV }
-				clr_state_flag = marked_for_transfer_st
+				var:taker = { transfer_state = PREV }
+				clr_state_flag = marked_for_transfer
 				#set_border_war = no
 			}
 		}
@@ -152,24 +152,24 @@ scripted_diplomatic_actions = {
 		send_scripted_gui = st_give_state
 		reset_send_effect = {
 			ROOT = { 
-				set_variable = { marked_states_st = 0 }
+				set_variable = { marked_states = 0 }
 			}
 			every_state = {
 				limit = {
-					has_state_flag = marked_for_transfer_st
+					has_state_flag = marked_for_transfer
 					is_owned_and_controlled_by = ROOT
 				}
-				clr_state_flag = marked_for_transfer_st
+				clr_state_flag = marked_for_transfer
 			}
 		}
 		
 		can_be_sent = { # send button will be disabled if no
 			AND = {
-				check_variable = { ROOT.marked_states_st > 0 }
+				check_variable = { ROOT.marked_states > 0 }
 				NOT = { 
 					ROOT = { 
 						all_owned_state = {
-							has_state_flag = marked_for_transfer_st
+							has_state_flag = marked_for_transfer
 						} 
 					}
 				}
@@ -238,41 +238,41 @@ scripted_diplomatic_actions = {
 
 		complete_effect = {
 			ROOT = { 
-				set_variable = { marked_states_st = 0 }
+				set_variable = { marked_states = 0 }
 			}
-			set_temp_variable = { ROOT.taker_St = this}
+			set_temp_variable = { ROOT.taker = this}
 			
 			every_state = {
 				limit = {
-					has_state_flag = marked_for_transfer_st
+					has_state_flag = marked_for_transfer
 					is_owned_and_controlled_by = THIS
 				}
 				ROOT = { transfer_state = PREV }
-				clr_state_flag = marked_for_transfer_st
+				clr_state_flag = marked_for_transfer
 			}
 		}
 		
 		send_scripted_gui = st_take_state
 		reset_send_effect = {
 			ROOT = { 
-				set_variable = { marked_states_st = 0 }
+				set_variable = { marked_states = 0 }
 			}
 			every_state = {
 				limit = {
-					has_state_flag = marked_for_transfer_st
+					has_state_flag = marked_for_transfer
 					is_owned_and_controlled_by = THIS
 				}
-				clr_state_flag = marked_for_transfer_st
+				clr_state_flag = marked_for_transfer
 			}
 		}
 		
 		can_be_sent = { # send button will be disabled if no
 			AND = {
-				check_variable = { ROOT.marked_states_st > 0 }
+				check_variable = { ROOT.marked_states > 0 }
 				NOT = { 
 					THIS = { 
 						all_owned_state = {
-							has_state_flag = marked_for_transfer_st
+							has_state_flag = marked_for_transfer
 						} 
 					}
 				}

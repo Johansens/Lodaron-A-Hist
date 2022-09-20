@@ -102,7 +102,6 @@ LAH_decisions = {
 					owner = ROOT
 					allow_spawning_on_enemy_provs = no
 					count = 10
-					start_experience_factor = 0.0
 				}
 			}
 		}

@@ -1,0 +1,107 @@
+spriteTypes = {	
+
+	SpriteType = {
+		name = "GFX_idea_spirit_of_lenin"
+		texturefile = "gfx/interface/ideas/spirit_of_lenin.dds"	
+	}
+}
+
+spriteTypes = {	
+
+	SpriteType = {
+		name = "GFX_idea_equal"
+		texturefile = "gfx/interface/ideas/equal.dds"	
+	}
+}
+
+spriteTypes = {	
+
+	SpriteType = {
+		name = "GFX_idea_five_y_plan"
+		texturefile = "gfx/interface/ideas/five_y_plan.dds"	
+	}
+}
+
+spriteTypes = {	
+
+	SpriteType = {
+		name = "GFX_idea_council"
+		texturefile = "gfx/interface/ideas/council.dds"	
+	}
+}
+
+spriteTypes = {	
+
+	SpriteType = {
+		name = "GFX_idea_mil_loyal"
+		texturefile = "gfx/interface/ideas/mil_loyal.dds"	
+	}
+}
+
+spriteTypes = {	
+
+	SpriteType = {
+		name = "GFX_idea_national_pol"
+		texturefile = "gfx/interface/ideas/national_pol.dds"	
+	}
+}
+
+spriteTypes = {	
+
+	SpriteType = {
+		name = "GFX_idea_redraft_con"
+		texturefile = "gfx/interface/ideas/redraft_con.dds"	
+	}
+}
+
+spriteTypes = {	
+
+	SpriteType = {
+		name = "GFX_idea_new_i"
+		texturefile = "gfx/interface/ideas/new_i.dds"	
+	}
+}
+
+spriteTypes = {	
+
+	SpriteType = {
+		name = "GFX_idea_soc_worker_p"
+		texturefile = "gfx/interface/ideas/soc_worker_p.dds"	
+	}
+}
+
+spriteTypes = {	
+
+	SpriteType = {
+		name = "GFX_idea_new_bank"
+		texturefile = "gfx/interface/ideas/new_bank.dds"	
+	}
+}
+
+spriteTypes = {	
+
+	SpriteType = {
+		name = "GFX_idea_gulag"
+		texturefile = "gfx/interface/ideas/gulag.dds"	
+	}
+}
+
+##########################################################
+
+# # = gfx fuer variables #
+
+spriteTypes = {	
+
+	SpriteType = {
+		name = "GFX_idea_banana_eco"
+		texturefile = "gfx/interface/ideas/banana_eco.dds"	
+	}
+}
+
+spriteTypes = {	
+
+	SpriteType = {
+		name = "GFX_idea_guerillia_mil"
+		texturefile = "gfx/interface/ideas/guerillia_mil.dds"	
+	}
+}

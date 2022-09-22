@@ -18,4 +18,78 @@ country_event = {
 		set_variable = { ST_F_ELS = -0.15 }
 	}
 }
-
+country_event = {
+	id = LAH_events.2
+	title = "Depression fixer event "
+	desc =  "can be ignored"
+	hidden = yes
+	picture = GFX_report_event_canada_treaty
+	is_triggered_only = yes
+	immediate = {
+		set_variable = { PP_C_COS = 0.2 }
+		set_variable = { CG_F_COS = 0.2 }
+		set_variable = { ICF_F_COS = -0.1 }
+		set_variable = { BS_F_COS = -0.15 }
+		set_variable = { ST_F_COS = -0.15 }
+	}
+}
+country_event = {
+	id = LAH_events.3
+	title = "Depression fixer event "
+	desc =  "can be ignored"
+	hidden = yes
+	picture = GFX_report_event_canada_treaty
+	is_triggered_only = yes
+	immediate = {
+		set_variable = { PP_C_GUA = 0.2 }
+		set_variable = { CG_F_GUA = 0.2 }
+		set_variable = { ICF_F_GUA = -0.1 }
+		set_variable = { BS_F_GUA = -0.15 }
+		set_variable = { ST_F_GUA = -0.15 }
+	}
+}
+country_event = {
+	id = LAH_events.4
+	title = "Depression fixer event "
+	desc =  "can be ignored"
+	hidden = yes
+	picture = GFX_report_event_canada_treaty
+	is_triggered_only = yes
+	immediate = {
+		set_variable = { PP_C_HON = 0.2 }
+		set_variable = { CG_F_HON = 0.2 }
+		set_variable = { ICF_F_HON = -0.1 }
+		set_variable = { BS_F_HON = -0.15 }
+		set_variable = { ST_F_HON = -0.15 }
+	}
+}
+country_event = {
+	id = LAH_events.5
+	title = "Depression fixer event "
+	desc =  "can be ignored"
+	hidden = yes
+	picture = GFX_report_event_canada_treaty
+	is_triggered_only = yes
+	immediate = {
+		set_variable = { PP_C_NIC = 0.2 }
+		set_variable = { CG_F_NIC = 0.2 }
+		set_variable = { ICF_F_NIC = -0.1 }
+		set_variable = { BS_F_NIC = -0.15 }
+		set_variable = { ST_F_NIC = -0.15 }
+	}
+}
+country_event = {
+	id = LAH_events.6
+	title = "Depression fixer event "
+	desc =  "can be ignored"
+	hidden = yes
+	picture = GFX_report_event_canada_treaty
+	is_triggered_only = yes
+	immediate = {
+		set_variable = { PP_C_PAN = 0.2 }
+		set_variable = { CG_F_PAN = 0.2 }
+		set_variable = { ICF_F_PAN = -0.1 }
+		set_variable = { BS_F_PAN = -0.15 }
+		set_variable = { ST_F_PAN = -0.15 }
+	}
+}

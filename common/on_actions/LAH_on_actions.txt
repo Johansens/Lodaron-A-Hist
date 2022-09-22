@@ -1,12 +1,42 @@
 on_actions = {
-#	on_startup = {
-#		effect = {
-#			ELS = {
-#				add_dynamic_modifier = {
-#					modifier = ca_depression_modifier_ELS 
-#				}
-#				country_event = { id = LAH_events.1 hours = 1 }
-#			}
-#		}
-#	}
+	on_startup = {
+		effect = {
+			ELS = {
+				add_dynamic_modifier = {
+					modifier = ca_depression_modifier_ELS 
+				}
+				country_event = { id = LAH_events.1 hours = 1 }
+			}
+            COS = {
+                add_dynamic_modifier = {
+                    modifier = ca_depression_modifier_COS
+                }
+                country_event = { id = LAH_events.2 hours = 1 } 
+            }
+            GUA = {
+                add_dynamic_modifier = {
+                    modifier = ca_depression_modifier_GUA
+                }
+                country_event = { id = LAH_events.3 hours = 1 }
+            }
+            HON = {
+                add_dynamic_modifier = {
+                    modifier = ca_depression_modifier_HON
+                }
+                country_event = { id = LAH_events.4 hours = 1 }
+            }
+            NIC = {
+                add_dynamic_modifier = {
+                    modifier = ca_depression_modifier_NIC
+                }
+                country_event = { id = LAH_events.5 hours = 1 }
+            }
+            PAN = {
+                add_dynamic_modifier = {
+                    modifier = ca_depression_modifier_PAN
+                }
+                country_event = { id = LAH_events.6 hours = 1 }
+            }
+		}
+	}
 }

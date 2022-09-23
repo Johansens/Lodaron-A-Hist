@@ -193,11 +193,11 @@ focus_tree = {
 				limit = { 
 					original_tag = COS
 				}
-				add_to_variable = { CG_F_BE_COS value = -0.03}
-				add_to_variable = { ICF_F_BE_COS value = -0.02}
-				add_to_variable = { BS_F_BE_COS value = 0.1 }
-				add_to_variable = { LR_F_BE_COS value = -0.03}
-				add_to_variable = { PFME_F_BE_COS value = 0.05}
+				add_to_variable = { var = CG_F_BE_COS value = -0.03}
+				add_to_variable = { var = ICF_F_BE_COS value = -0.02}
+				add_to_variable = { var = BS_F_BE_COS value = 0.1 }
+				add_to_variable = { var = LR_F_BE_COS value = -0.03}
+				add_to_variable = { var = PFME_F_BE_COS value = 0.05}
 			}
 		}
 	}
@@ -494,7 +494,7 @@ focus_tree = {
 				limit = {
 					original_tag = COS
 				}
-				set_variable = ST_F_BE_COS = 0.05
+				set_variable = { ST_F_BE_COS = 0.05 }
 				add_to_variable = { var = PP_C_BE_COS value = 0.02}
 			}
 		}
@@ -524,8 +524,8 @@ focus_tree = {
 				limit = {
 					original_tag = COS
 				} 
-				set_variable = CG_F_BE_COS 0.03
-				set_variable = BS_F_BE_COS -0.03
+				set_variable = { CG_F_BE_COS = 0.03 }
+				set_variable = { BS_F_BE_COS = -0.03 }
 				add_to_variable = { var = ICF_F_BE_COS value = 0.02 } 
 			}
 		}
@@ -603,7 +603,7 @@ focus_tree = {
 					original_tag = COS
 				}
 				add_to_variable = { var = ST_F_BE_COS value = 0.025}
-				set_variable = PFME_F_BE_COS 0.05
+				set_variable = { PFME_F_BE_COS = 0.05 }
 				add_to_variable = { var = LR_F_BE_COS value = 0.05}
 			}
 		}

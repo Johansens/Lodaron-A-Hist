@@ -3,5 +3,5 @@ tags={
 	"Alternative History"
 }
 name="Lodaron-A-Hist"
-supported_version="1.11.13"
+supported_version="1.12.1"
 remote_file_id="2852040307"

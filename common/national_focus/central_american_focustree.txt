@@ -4,18 +4,18 @@ focus_tree = {
 	country = {
 		factor = 0
 
-        modifier = {
-            add = 10
-            OR = {
-                tag = ELS
-                tag = HON
-                tag = GUA
-                tag = COS
-	    	    tag = PAN
-                tag = NIC
-           }
-		}
-	}
+#        modifier = {
+#            add = 10
+#            OR = {
+#                tag = ELS
+#                tag = HON
+#                tag = GUA
+#                tag = COS
+#	    	    tag = PAN
+#                tag = NIC
+#           }
+#		}
+#	}
 	#Enforce State securalism
 	focus = {
 		id = ELS_enforce_state_securalism

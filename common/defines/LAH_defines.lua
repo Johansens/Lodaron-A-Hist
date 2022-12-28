@@ -15,8 +15,6 @@ NDefines.NPolitics.LEADER_TRAITS_XP_SHOW = 0.01;
 NDefines.NBuildings.MAX_SHARED_SLOTS = 50
 
 NDefines.NDiplomacy.DIPLOMACY_HOURS_BETWEEN_REQUESTS = 2;
-NDefines.NDiplomacy.MP_NUM_LOSERS_FOR_PEACE_PAUSE = 1;	
-NDefines.NDiplomacy.MP_NUM_WINNERS_FOR_PEACE_PAUSE = 1;
 
 NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 100;			
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 250;
@@ -26,7 +24,6 @@ NDefines.NGame.DIPLOMACY_ACCEPT_ATTACHE_OPINION_TRASHHOLD = 10;
 
 NDefines.NAir.AIR_DEPLOYMENT_DAYS = 0;
 
-NDefines.NAir.AIR_WING_MAX_SIZE = 800;                               -- this can be halved 3 times into 100 stacks (very convenient)-- WAS 10000 | we can really pounce a naval strike and escalate
 NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane to create a mission
 	0.0, -- AIR_SUPERIORITY
 	0.0, -- CAS
@@ -44,7 +41,6 @@ NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane t
 	0.0, -- NAVAL_MINES_SWEEPING
 	0.0, -- MISSION_RECON
 	};
-NDefines.NAir.DETECT_CHANCE_FROM_AIRCRAFTS_EFFECTIVE_COUNT = 5000;
 
 NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0;
 NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 1.0;

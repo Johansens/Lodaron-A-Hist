@@ -45,6 +45,18 @@ NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane t
 NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0;
 NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 1.0;
 NDefines.NNavy.NAVAL_MINES_DECAY_AT_PEACE_TIME = 1                    -- WAS 0.25 
+NDefines.NNavy.MISSION_SUPREMACY_RATIOS = { 						-- supremacy multipliers for different mission types   | Strikeforce/Naval Invasion Support now 0 supremacy to avoid free supremacy
+		0.0, -- HOLD
+		1.0, -- PATROL		
+		0.0, -- STRIKE FORCE 
+		0.2, -- CONVOY RAIDING
+		0.5, -- CONVOY ESCORT
+		0.0, -- MINES PLANTING	
+		0.0, -- MINES SWEEPING	
+		0.0, -- TRAIN
+		0.0, -- RESERVE_FLEET
+		0.2, -- NAVAL_INVASION_SUPPORT
+}
 
 NDefines.NProduction.MIN_LICENSE_ACTIVE_DAYS = 1                 -- License can be cancelled at any time now, down from 30 | 
 NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 15;

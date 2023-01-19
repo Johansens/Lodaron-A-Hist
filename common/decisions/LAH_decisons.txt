@@ -115,8 +115,8 @@ LAH_decisions = {
         visible = {
             always = yes
         }
-        cost = 200
- 		days_re_enable = 180
+        cost = 100
+ 		days_re_enable = 120
 
 		complete_effect = {
 			random_list = {
